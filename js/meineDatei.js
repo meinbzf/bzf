@@ -4,7 +4,7 @@ let aktuelleFrage = 0;
 let MAX_FRAGEN = 0;
 let docTitle = document.title;
 if (docTitle.match("BZF"))
-    MAX_FRAGEN = 260;
+    MAX_FRAGEN = 261;
 if (docTitle.match("Luftrecht"))
     MAX_FRAGEN = 195;
 if (docTitle.match("Meteorologie"))
@@ -210,4 +210,11 @@ function loescheListe() {
             blaettern(true);
         }
     });
+}
+
+let myBtnOpenPdf = document.getElementById("openPdf");
+myBtnOpenPdf.addEventListener("click", openPdf);
+function openPdf() {
+    //alert ("Hi");
+    window.open("images/NavaufgabeAnlagen.pdf", "Anlage Navigationsaufgabe");
 }
