@@ -4,9 +4,9 @@ let aktuelleFrage = 0;
 let MAX_FRAGEN = 0;
 let docTitle = document.title;
 
-if (docTitle.match("BZF Bundesnetzagentur")) 
+if (docTitle.match("BZF")) 
     MAX_FRAGEN = 261;
-if (docTitle.match("BZF UL"))
+if (docTitle.match("Flugfunk"))
     MAX_FRAGEN = 125;
 if (docTitle.match("Luftrecht"))
     MAX_FRAGEN = 195;
