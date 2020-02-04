@@ -3,8 +3,11 @@
 let aktuelleFrage = 0;
 let MAX_FRAGEN = 0;
 let docTitle = document.title;
-if (docTitle.match("BZF"))
+
+if (docTitle.match("BZF Bundesnetzagentur")) 
     MAX_FRAGEN = 261;
+if (docTitle.match("BZF UL"))
+    MAX_FRAGEN = 125;
 if (docTitle.match("Luftrecht"))
     MAX_FRAGEN = 195;
 if (docTitle.match("Meteorologie"))
